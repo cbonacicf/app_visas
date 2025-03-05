@@ -31,12 +31,14 @@ from sqlalchemy.ext.automap import automap_base
 ### Conexión a la base de datos
 # parámetros de conexión
 
-objeto_url = URL.create(
-    'postgresql+psycopg2',
-    username = 'postgres',
-    host = 'localhost',
-    database = 'gestion_visas',
-)
+#objeto_url = URL.create(
+#    'postgresql+psycopg2',
+#    username = 'postgres',
+#    host = 'localhost',
+#    database = 'gestion_visas',
+#)
+
+objeto_url = URL.create( ${{ Postgres.DATABASE_URL }} )
 
 engine = create_engine(objeto_url)
 
