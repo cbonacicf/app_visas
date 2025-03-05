@@ -11,4 +11,3 @@ dash_extensions
 XlsxWriter
 sqlalchemy
 psycopg2
-pickle
