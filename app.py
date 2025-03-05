@@ -38,7 +38,7 @@ from sqlalchemy.ext.automap import automap_base
 #    database = 'gestion_visas',
 #)
 
-objeto_url = URL.create( ${{ Postgres.DATABASE_URL }} )
+objeto_url = URL.create( os.environ('DATABASE_URL') )
 
 engine = create_engine(objeto_url)
 
