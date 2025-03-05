@@ -16,7 +16,7 @@ from openpyxl.utils.exceptions import InvalidFileException
 import dash
 from dash import Dash, dcc, html, dash_table, Input, Output, State, callback, _dash_renderer
 import dash_ag_grid as dag
-import dash_daq as daq
+#import dash_daq as daq
 import dash_bootstrap_components as dbc
 from dash_extensions.enrich import Input, Output, State, DashProxy, MultiplexerTransform, html
 from dash.exceptions import PreventUpdate
@@ -39,7 +39,7 @@ from sqlalchemy.ext.automap import automap_base
 #)
 
 objeto_url = URL.create(
-    'postgresql+psycopg2',
+#    'postgresql+psycopg2',
     username = os.environ['PGUSER'],
     password = os.environ['PGPASSWORD'],
     host = os.environ['PGHOST'],
