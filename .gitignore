@@ -1,0 +1,6 @@
+__pycache__
+.DS_Store
+.python-version
+migraciones.sublime-project
+migraciones.sublime-workspace
+app_local.py
