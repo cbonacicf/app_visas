@@ -39,7 +39,7 @@ from sqlalchemy.ext.automap import automap_base
 #)
 
 objeto_url = URL.create(
-#    'postgresql+psycopg2',
+    'postgresql+psycopg2',
     username = os.environ['PGUSER'],
     password = os.environ['PGPASSWORD'],
     host = os.environ['PGHOST'],

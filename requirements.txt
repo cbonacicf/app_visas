@@ -10,3 +10,4 @@ dash_extensions==1.0.18
 XlsxWriter
 sqlalchemy
 fastexcel
+psycopg2
