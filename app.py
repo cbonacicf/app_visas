@@ -2296,7 +2296,7 @@ def activa_boton_modifica(seleccionado, datos, *lista_mod):
 
 
 # descarga archivo de trabajo
-@callback(
+@app.callback(
     Output('descarga-excel', 'data'),
     Input('btn-descarga-excel', 'n_clicks'),
     prevent_initial_call=True,
