@@ -38,9 +38,10 @@ from sqlalchemy.ext.automap import automap_base
 #    database = 'gestion_visas',
 #)
 
-objeto_url = URL.create( os.environ['DATABASE_URL'] )
+#objeto_url = URL.create( os.environ['DATABASE_URL'] )
 
-engine = create_engine(objeto_url)
+#engine = create_engine(objeto_url)
+engine = create_engine(os.environ['DATABASE_URL'])
 
 ### Fuentes externas
 Conversion = namedtuple('Conversion', ['app', 'ex', 'mig', 'lec', 'mod'])
