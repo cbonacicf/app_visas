@@ -5,7 +5,7 @@ pytz
 openpyxl
 dash==2.17
 dash_ag_grid==31.2
-dash_daq=0.5
+dash_daq==0.5
 dash_bootstrap_components==1.6
 dash_extensions==1.018
 XlsxWriter
