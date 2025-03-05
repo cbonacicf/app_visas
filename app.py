@@ -33,22 +33,15 @@ from sqlalchemy.ext.automap import automap_base
 
 #objeto_url = URL.create(
 #    'postgresql+psycopg2',
-#    username = 'postgres',
-#    host = 'localhost',
-#    database = 'gestion_visas',
+#    username = os.environ['PGUSER'],
+#    password = os.environ['PGPASSWORD'],
+#    host = os.environ['PGHOST'],
+#    port = os.environ['PGPORT'],
+#    database = os.environ['PGDATABASE'],
 #)
 
-objeto_url = URL.create(
-    'postgresql+psycopg2',
-    username = os.environ['PGUSER'],
-    password = os.environ['PGPASSWORD'],
-    host = os.environ['PGHOST'],
-    port = os.environ['PGPORT'],
-    database = os.environ['PGDATABASE'],
-)
-
-engine = create_engine(objeto_url)
-#engine = create_engine(os.environ['DATABASE_URL'])
+#engine = create_engine(objeto_url)
+engine = create_engine(os.environ['DATABASE_URL'])
 
 ### Fuentes externas
 Conversion = namedtuple('Conversion', ['app', 'ex', 'mig', 'lec', 'mod'])
